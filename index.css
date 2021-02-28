@@ -1,0 +1,33 @@
+body {
+    margin: auto;
+    cursor: default;
+    background: url(./assets/bg.jpg);
+    background-size: cover;
+}
+header {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+}
+.menu {
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+}
+.list__item {
+    display: flex;
+    align-items: center;
+    color: #883468;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 160%;
+}
+.list__item:hover {
+    transition: all 2s ease;
+    color: #00AFDB;

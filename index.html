@@ -8,43 +8,77 @@
     <title>bird21</title>
   </head>
   <body>
-     <main>
-        <div class="faq">
-     <div class="faq-item">
-         <input type="checkbox" class="faq-input" name="one" id="one">
-         <label class="faq-title" for="one">One</label>
-         <div class="faq-text">
-            <input type="checkbox" class="faq-input" name="one1" id="one1">
-             <label class="faq-title1" for="one1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</label>
-             <div class="faq-text1">
+     <main id="main">
+        <div class="txt">
+     <div class="txt-item">
+         <input type="checkbox" class="txt-input" name="one" id="one">
+         <label class="txt-title" for="one">ONE</label>
+         <div class="txt-text">
+            <input type="checkbox" class="txt-input" name="one1" id="one1">
+             <label class="txt-title1" for="one1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</label>
+             <div class="txt-text1">
                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe officia eum quos.</p>
                 </div>
          </div>
      </div>
-     <div class="faq-item">
-        <input type="checkbox" class="faq-input" name="two" id="two">
-        <label class="faq-title" for="two">Two</label>
-        <div class="faq-text">
-           <input type="checkbox" class="faq-input" name="two1" id="two1">
-            <label class="faq-title1" for="two1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus hic sapiente quisquam! Natus, ratione blanditiis..</label>
-            <div class="faq-text1">
+     <div class="txt-item">
+        <input type="checkbox" class="txt-input" name="two" id="two">
+        <label class="txt-title" for="two">TWO</label>
+        <div class="txt-text">
+           <input type="checkbox" class="txt-input" name="two1" id="two1">
+            <label class="txt-title1" for="two1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus hic sapiente quisquam! Natus, ratione blanditiis.</label>
+            <div class="txt-text1">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aliquam quo mollitia veritatis? Nam explicabo dolorem repellendus impedit?
                 </p>
                </div>
         </div>
     </div>
-    <div class="faq-item">
-        <input type="checkbox" class="faq-input" name="three" id="three">
-        <label class="faq-title" for="three">Three</label>
-        <div class="faq-text">
-           <input type="checkbox" class="faq-input" name="three1" id="three1">
-            <label class="faq-title1" for="three1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nesciunt. Deleniti ipsa, voluptatum ea possimus harum veniam labore quas iure..</label>
-            <div class="faq-text1">
+    <div class="txt-item">
+        <input type="checkbox" class="txt-input" name="three" id="three">
+        <label class="txt-title" for="three">THREE</label>
+        <div class="txt-text">
+           <input type="checkbox" class="txt-input" name="three1" id="three1">
+            <label class="txt-title1" for="three1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nesciunt. Deleniti ipsa, voluptatum ea possimus harum veniam labore quas iure.</label>
+            <div class="txt-text1">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique corrupti autem veniam optio, harum vero numquam delectus voluptate rem laudantium, eius velit, molestias at possimus repellat?
                 </p>
                </div>
         </div>
     </div>
     </main>
+    <div id="toggle">
+    <nav class="nav">
+        <input class="nav__check" type="checkbox" id="showmenu"/>
+        <label class="nav__showmenu" for="showmenu">&#9776;</label>
+        <label class="nav__back" for="showmenu"></label>
+        <ul class="menu">
+          <li><a class="menu__item" href="#">ONE</a>
+            <input class="menu__check" type="checkbox" id="menu1">
+            <label class="menu__showsub" for="menu1">&#9660;</label>
+            <ul class="menu__submenu">
+              <li><a class="menu__item1" href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+              <li><a class="menu__item2" href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe officia eum quos.</a></li>
+            </ul>
+        </li>
+          <li>
+            <a class="menu__item" href="#">TWO</a>
+            <input class="menu__check" type="checkbox" id="menu2">
+            <label class="menu__showsub" for="menu2">&#9660;</label>
+            <ul class="menu__submenu">
+                <li><a class="menu__item1" href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus hic sapiente quisquam! Natus, ratione blanditiis.</a></li>
+                <li><a class="menu__item2" href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint aliquam quo mollitia veritatis? Nam explicabo dolorem repellendus impedit?</a></li>
+              </ul>
+          </li>
+          <li><a class="menu__item" href="#">THREE</a>
+         <input class="menu__check" type="checkbox" id="menu3">
+            <label class="menu__showsub" for="menu3">&#9660;</label>
+            <ul class="menu__submenu">
+                <li><a class="menu__item1" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nesciunt. Deleniti ipsa, voluptatum ea possimus harum veniam labore quas iure.</a></li>
+                <li><a class="menu__item2" href="#">orem ipsum, dolor sit amet consectetur adipisicing elit. Similique corrupti autem veniam optio, harum vero numquam delectus voluptate rem laudantium, eius velit, molestias at possimus repellat?</a></li>
+              </ul>
+        </li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>

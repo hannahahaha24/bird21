@@ -1,33 +1,250 @@
+@media (min-width: 1920px) {
 body {
     margin: auto;
     cursor: default;
-    background: url(./assets/bg.jpg);
+    background: url(./assets/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
-header {
-    position: absolute;
-    width: 100%;
-    padding-top: 20px;
+main {
+    display: block;
+    padding-top: 200px;
 }
-.menu {
-    width: 300px;
-    display: flex;
+.faq {
+    max-width: 1000px;
     margin: 0 auto;
+
 }
-.list {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    list-style-type: none;
+.faq-item {
+    margin-bottom: 10px;
+
 }
-.list__item {
-    display: flex;
-    align-items: center;
-    color: #883468;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    line-height: 160%;
+.faq-title {
+    color: #fff;
+    font-size: 36px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: relative;
+    background-color: rgba(221, 213, 138, 0.3);
 }
-.list__item:hover {
-    transition: all 2s ease;
-    color: #00AFDB;
+.faq-title1 {
+    color: #fff;
+    font-size: 27px;
+    display: block;
+    cursor: pointer;
+    padding: 5px 15px;
+    position: relative;
+}
+.faq-title:hover {
+    color: #6b3488;
+}
+.faq-title1:hover {
+    color: #6b3488;
+}
+.faq-text {
+    display: none;
+    background-color: rgba(221, 213, 138, 0.3);
+    color: #fff;
+    font-size: 24px;
+    padding: 5px 15px;
+    text-align: justify;
+}
+.faq-text1 {
+    display: none;
+    font-style: italic;
+    color: #fff;
+    font-size: 22px;
+    padding: 0px 15px;
+    text-align: justify;
+}
+.faq-input {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.faq-input:checked ~ .faq-text {
+    display: block;
+}
+.faq-input:checked ~ .faq-title{
+    background-color: #6b3488a0;
+    color: #fff;
+}
+.faq-input:checked ~ .faq-text1 {
+    display: block;
+}
+.faq-input:checked ~ .faq-title1{
+    color: #6b3488f1;
+}
+}
+@media (min-width: 768px) and (max-width: 1919.5px) {
+    body {
+        margin: auto;
+        cursor: default;
+        background: url(./assets/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    main {
+        display: block;
+        padding-top: 300px;
+    }
+    .faq {
+        max-width: 500px;
+        margin: 0 auto;
+
+    }
+    .faq-item {
+        margin-bottom: 5px;
+
+    }
+    .faq-title {
+        color: #fff;
+        font-size: 16px;
+        display: block;
+        cursor: pointer;
+        padding: 10px 15px;
+        position: relative;
+        background-color: rgba(221, 213, 138, 0.3);
+    }
+    .faq-title1 {
+        color: #fff;
+        font-size: 14px;
+        display: block;
+        cursor: pointer;
+        padding: 5px 15px;
+        position: relative;
+    }
+    .faq-title:hover {
+        color: #6b3488;
+    }
+    .faq-title1:hover {
+        color: #6b3488;
+    }
+    .faq-text {
+        display: none;
+        background-color: rgba(221, 213, 138, 0.3);
+        color: #fff;
+        font-size: 14px;
+        padding: 5px 15px;
+        text-align: justify;
+    }
+    .faq-text1 {
+        display: none;
+        font-style: italic;
+        color: #fff;
+        font-size: 12px;
+        padding: 0px 15px;
+        text-align: justify;
+    }
+    .faq-input {
+        appearance: none;
+        -webkit-appearance: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
+    .faq-input:checked ~ .faq-text {
+        display: block;
+    }
+    .faq-input:checked ~ .faq-title{
+        background-color: #6b3488a0;
+        color: #fff;
+    }
+    .faq-input:checked ~ .faq-text1 {
+        display: block;
+    }
+    .faq-input:checked ~ .faq-title1{
+        color: #6b3488f1;
+    }
+}
+@media (min-width: 480px) and  (max-width: 767.5px) {
+    #main {display:none;}
+    body {
+        margin: auto;
+        cursor: default;
+        background: url(./assets/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    main {
+        display: block;
+        padding-top: 115px;
+    }
+    .faq {
+        max-width: 300px;
+        margin: 0 auto;
+
+    }
+    .faq-item {
+        margin-bottom: 5px;
+
+    }
+    .faq-title {
+        color: #fff;
+        font-size: 15px;
+        display: block;
+        cursor: pointer;
+        padding: 10px 15px;
+        position: relative;
+        background-color: rgba(221, 213, 138, 0.387);
+    }
+    .faq-title1 {
+        color: #fff;
+        font-size: 14px;
+        display: block;
+        cursor: pointer;
+        padding: 5px 15px;
+        position: relative;
+    }
+    .faq-title:hover {
+        color: #6b3488;
+    }
+    .faq-title1:hover {
+        color: #6b3488;
+    }
+    .faq-text {
+        display: none;
+        background-color: rgba(221, 213, 138, 0.3);
+        color: #fff;
+        font-size: 14px;
+        padding: 5px 15px;
+        text-align: justify;
+    }
+    .faq-text1 {
+        display: none;
+        font-style: italic;
+        color: #fff;
+        font-size: 12px;
+        padding: 0px 15px;
+        text-align: justify;
+    }
+    .faq-input {
+        appearance: none;
+        -webkit-appearance: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
+    .faq-input:checked ~ .faq-text {
+        display: block;
+    }
+    .faq-input:checked ~ .faq-title{
+        background-color: #6b3488a0;
+        color: #fff;
+    }
+    .faq-input:checked ~ .faq-text1 {
+        display: block;
+    }
+    .faq-input:checked ~ .faq-title1{
+        color: #6b3488f1;
+    }*/
+}
